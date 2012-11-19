@@ -1,0 +1,29 @@
+/* Common less mixins
+-----------------------------------------------------------*/
+
+.base-font
+{
+  .font;
+}
+
+.font (
+  @font-family: @base-font-family,
+  @font-size: @base-font-size,
+  @font-color: @base-color
+) {
+    font-family: @font-family;
+    font-size: @font-size;
+    color: @font-color;
+}
+
+.layout-position (
+  @top: auto,
+  @right: auto,
+  @bottom: auto,
+  @left: auto
+) {
+  top: @top;
+  right: @right;
+  bottom: @bottom;
+  left: @left;
+}

@@ -25,3 +25,4 @@ packages
 Web.Release.config
 myt
 .idea
+node_modules
