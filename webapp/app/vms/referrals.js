@@ -2,12 +2,12 @@
     ['jquery', 'knockout', 'knockout.mapping', 'data/data', 'infra/store', 'infra/util', 'nls/nls', 'models/models'],
     function ($, ko, mapping, data, store, util, resources, models) {
         var
-            saveLabel = resources.buttonSave, // i18n resources
+            saveLabel    = resources.buttonSave, // i18n resources
             buttonSearch = resources.buttonSearch,
             referralName = ko.observable(),
-            type = ko.observable(),
-            isBusy = ko.observable(false),
-            searchText = ko.observable(''),
+            type         = ko.observable(),
+            isBusy       = ko.observable(false),
+            searchText   = ko.observable(''),
             referralList = ko.observableArray([]);
 
         var
