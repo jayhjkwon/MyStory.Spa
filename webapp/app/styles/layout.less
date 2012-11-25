@@ -15,9 +15,17 @@ div#left {
   background-color: #efefef;
 }
 
+div#titles {
+  position: absolute;
+  .layout-position(@top-height, auto, 0, @left-width);
+  width: @titles-width;
+  background-color: gray;
+  overflow-y: auto;
+}
+
 div#main {
   position: absolute;
-  .layout-position(@top-height, 0px, 0px, @left-width);
+  .layout-position(@top-height, 0px, 0px, @left-width + @titles-width);
   background-color: #fff;
   overflow-y: auto;
 }

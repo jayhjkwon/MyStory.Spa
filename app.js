@@ -21,10 +21,13 @@ app.configure(function () {
     app.use(express.static(path.join(__dirname, 'webapp')));
 });
 
+
+
 app.configure('development', function () {
     app.use(express.errorHandler());
 });
 
+// app.get('/', routes.index);
 app.get('/', routes.index);
 app.get('/api/customers', customers.list);
 
