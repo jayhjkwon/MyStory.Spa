@@ -3,7 +3,7 @@
 -----------------------------------------------------------*/
 
 div#top {
-  background-color: #4b4b4b;
+  background-color: @top-background-color;
   height: @top-height;
   line-height: @top-height;
 }
@@ -12,20 +12,22 @@ div#left {
   position: absolute;
   .layout-position(@top-height, auto, 0px, 0px);
   width: @left-width;
-  background-color: #334455;
+  background-color: @left-background-color;
 }
 
 div#titles {
   position: absolute;
   .layout-position(@top-height, auto, 0, @left-width);
   width: @titles-width;
-  background-color: gray;
+  background-color: @titles-background-color;
+  .box-shadow(inset 0px 0px 5px 1px #888);
   overflow-y: auto;
 }
 
 div#main {
   position: absolute;
   .layout-position(@top-height, 0px, 0px, @left-width + @titles-width);
-  background-color: #fff;
+  background-color: @main-background-color;
   overflow-y: auto;
+  padding: 5px;
 }

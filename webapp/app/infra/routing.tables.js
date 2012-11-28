@@ -33,7 +33,7 @@
                 viewPanel: config.viewPanels.MAIN,
                 viewModel: vms.referrals,
                 route: config.hashes.referral,
-                callback: vms.referrals.loadReferrals,
+                //callback: vms.referrals.loadReferrals,
 			},
 
 			// patient
@@ -49,7 +49,7 @@
 			// document
 			{
                 viewId: config.viewIds.document,
-                view: views.document,
+                view: views.documents,
                 viewPanel: config.viewPanels.MAIN,
                 viewModel: vms.document,
                 route: config.hashes.document,

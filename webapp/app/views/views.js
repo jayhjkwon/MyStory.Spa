@@ -6,12 +6,12 @@
     'text!views/patients.html',
     'text!views/referrals.html'
     ],
-    function (top, left, titles, document, patient, referral) {
+    function (top, left, titles, documents, patient, referral) {
         return {
             top: top,
             left: left,
             titles: titles,
-            document: document,
+            documents: documents,
             patient: patient,
             referral: referral
         }
