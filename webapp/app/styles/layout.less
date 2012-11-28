@@ -1,0 +1,31 @@
+
+/* page layout
+-----------------------------------------------------------*/
+
+div#top {
+  background-color: #4b4b4b;
+  height: @top-height;
+  line-height: @top-height;
+}
+
+div#left {
+  position: absolute;
+  .layout-position(@top-height, auto, 0px, 0px);
+  width: @left-width;
+  background-color: #efefef;
+}
+
+div#titles {
+  position: absolute;
+  .layout-position(@top-height, auto, 0, @left-width);
+  width: @titles-width;
+  background-color: gray;
+  overflow-y: auto;
+}
+
+div#main {
+  position: absolute;
+  .layout-position(@top-height, 0px, 0px, @left-width + @titles-width);
+  background-color: #fff;
+  overflow-y: auto;
+}
