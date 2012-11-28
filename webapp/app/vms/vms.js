@@ -1,8 +1,10 @@
 ﻿define(
-    ['./nav', './patients', './referrals', './documents'],
-    function(nav, patients, referrals, documents) {
+    ['./top', './left', './titles', './patients', './referrals', './documents'],
+    function(top, left, titles, patients, referrals, documents) {
         return {
-            nav: nav,
+            top: top,
+            left: left,
+            titles: titles,
             patients: patients,
             referrals: referrals,
             documents: documents

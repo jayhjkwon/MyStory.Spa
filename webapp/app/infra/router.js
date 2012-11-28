@@ -18,11 +18,20 @@
 
                 _.each(tables, function (table) {
 
-                    // attach the view to the main div
-                    if (table.isMainView) {
-                        $('#main').append(table.view);
-                    } else {
-                        $('#top').append(table.view);
+                    // attach the view to the panels
+                    switch (table.viewPanel) {
+                        case config.viewPanels.TOP:
+                            $('#top').append(table.view);
+                            break;
+                        case config.viewPanels.LEFT:
+                            $('#left').append(table.view);
+                            break;
+                        case config.viewPanels.TITLES:
+                            $('#titles').append(table.view);
+                            break;
+                        case config.viewPanels.MAIN:
+                            $('#main').append(table.view);
+                            break;
                     }
 
                     // register route

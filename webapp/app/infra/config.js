@@ -4,8 +4,18 @@
         var
             storeExpiration = (1000 * 60 * 60 * 24), // 1 day
 
+            viewPanels = {
+                TOP: 'TOP',
+                LEFT: 'LEFT',
+                TITLES: 'TITLES',
+                MAIN: 'MAIN',
+                FOOTER: 'FOOTER'
+            },
+
             viewIds = {
-                nav: '#nav-div',
+                top: '#top-div',
+                left: '#left-div',
+                titles: '#titles-div',
                 referral: '#referral-div',
                 patient: '#patient-div',
                 document: '#document-div'
@@ -17,11 +27,12 @@
                 document: '#/documents'
             },
 
-            locale = 'ko-kr';  // 'ko-kr' for Korean, 'en' for English
+            locale = 'en';  // 'ko-kr' for Korean, 'en' for English
 
             useMock = true;     // use mock request, not real request
 
         return {
+            viewPanels: viewPanels,
             viewIds: viewIds,
             hashes: hashes,
             storeExpiration: storeExpiration,
